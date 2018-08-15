@@ -1,0 +1,29 @@
+service: base-serverless-package
+
+plugins:
+  - serverless-offline
+  - serverless-webpack
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules:
+      forceExclude:
+        - aws-sdk
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  environment: ${file(env.yml):${self:custom.stage}, file(env.yml):default}
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+          cors: true

@@ -1,0 +1,47 @@
+{
+  "name": "base-serverless-package",
+  "version": "1.0.0",
+  "description": "Base Node.js Serverless Project",
+  "main": "handler.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Steve Breault",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scenarex/base-serverless-package.git"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "semi": 2
+    }
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.293.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-source-map-support": "^2.0.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^5.3.0",
+    "jest": "^23.5.0",
+    "serverless-offline": "^3.25.7",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.16.5",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "source-map-support": "^0.5.8"
+  }
+}
