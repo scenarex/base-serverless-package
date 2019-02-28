@@ -1,4 +1,4 @@
-export const hello = (event, context, callback) => {
+export const handler = (event, context, callback) => {
   const data = JSON.parse(event.body);
   const name = data.name || "Default";
 
