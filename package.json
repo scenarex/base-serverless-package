@@ -1,6 +1,6 @@
 {
   "name": "base-serverless-package",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Base Node.js Serverless Project",
   "main": "hello.js",
   "scripts": {
