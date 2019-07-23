@@ -1,5 +1,5 @@
-import { hello } from "../handler";
-import json from "../mocks/handler-event.json";
+import { handler } from "../hello";
+import json from "../mocks/hello-event.json";
 
 test("hello", async () => {
   const event = json;
@@ -9,5 +9,5 @@ test("hello", async () => {
     expect(typeof response.body).toBe("string");
   };
 
-  await hello(event, context, callback);
+  await handler(event, context, callback);
 });

@@ -2,9 +2,9 @@
   "name": "base-serverless-package",
   "version": "1.0.0",
   "description": "Base Node.js Serverless Project",
-  "main": "handler.js",
+  "main": "hello.js",
   "scripts": {
-    "test": "jest"
+    "test": "serverless-bundle test"
   },
   "author": "Scenarex Inc",
   "license": "UNLICENSED",
@@ -13,39 +13,8 @@
     "type": "git",
     "url": "https://github.com/scenarex/base-serverless-package.git"
   },
-  "eslintConfig": {
-    "parserOptions": {
-      "ecmaVersion": 8,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    },
-    "rules": {
-      "semi": 2
-    }
-  },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/plugin-proposal-json-strings": "^7.2.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-syntax-import-meta": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "aws-sdk": "^2.412.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.1.0",
-    "babel-loader": "^8.0.5",
-    "babel-plugin-source-map-support": "^2.0.1",
-    "eslint": "^5.14.1",
-    "jest": "^24.1.0",
-    "serverless-webpack": "^5.2.0",
-    "webpack": "^4.29.6",
-    "webpack-node-externals": "^1.7.2"
+    "serverless-bundle": "^1.2.2"
   },
-  "dependencies": {
-    "@babel/runtime": "^7.3.4",
-    "source-map-support": "^0.5.10"
-  }
+  "dependencies": {}
 }
