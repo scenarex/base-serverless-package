@@ -14,7 +14,7 @@
     "url": "https://github.com/scenarex/base-serverless-package.git"
   },
   "devDependencies": {
-    "serverless-bundle": "^1.2.2"
+    "serverless-bundle": "^1.2.3"
   },
   "dependencies": {}
 }
